@@ -1,0 +1,70 @@
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream file("index.html");
+
+    file << R"(
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> larina</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7007ba, #2abfc7);
+    margin:0;
+    padding:40px;
+    text-align:center;
+    color:white;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+a{
+    display:block;
+    background:white;
+    color:#7007ba;
+    text-decoration:none;
+    margin:12px auto;
+    padding:15px;
+    width:80%;
+    max-width:500px;
+    border-radius:15px;
+    font-weight:bold;
+}
+
+a:hover{
+    transform:scale(1.03);
+}
+</style>
+</head>
+
+<body>
+<h1>📚 مكتبة زينة</h1>
+
+<a href="https://www.wattpad.com/story/351164174">الرواية 01</a>
+<a href="https://www.wattpad.com/story/412795659">الرواية 02</a>
+<a href="https://www.wattpad.com/story/363667639">الرواية 03</a>
+<a href="https://www.wattpad.com/story/345909298">الرواية 04</a>
+<a href="https://www.wattpad.com/story/409589933">الرواية 05</a>
+<a href="https://www.wattpad.com/story/341490313">الرواية 06</a>
+<a href="https://www.wattpad.com/story/357607342">الرواية 07</a>
+<a href="https://www.wattpad.com/story/344311370">الرواية 08</a>
+<a href="https://www.wattpad.com/story/363694588">الرواية 09</a>
+<a href="https://www.wattpad.com/story/379432897">الرواية 10</a>
+<a href="https://www.wattpad.com/story/363764520">الرواية 11</a>
+<a href="https://www.wattpad.com/story/371516987">الرواية 12</a>
+
+</body>
+</html>
+)";
+
+    file.close();
+    return 0;
+}
